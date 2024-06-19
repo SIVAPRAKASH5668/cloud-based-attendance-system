@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#EFFFFB ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.head-contaniner{
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  8px -8px 16px #bebebe,
+             -8px 8px 16px #ffffff;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 95%;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus{
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color:#028391;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+}
+
+input[type="submit"]:hover {
+    transition-delay: 0.1s;
+    transform: scale(1.03);
+}
+
+.form-group select#type{
+    font-size: medium;
+    margin: 2%;
+    padding: 0.7%;
+    border-radius: 8%;
+}
+
+.form-group select#type option{
+    padding: 5%;
+}
+
+.register-container {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+}
+.register-container p {
+    margin-top: 5.5%;
+    margin-right: 10px;
+    color: #555;
+}
+.register-container button {
+    background-color:#028391 ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.register-container button:hover {
+    transition-delay: 0.1s;
+    transform: scale(1.03);
+}
+.qr-page-button {
+    margin-top: 20px;
+}
+.qr-page-button button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.qr-page-button button:hover {
+    background-color: #ffca2c;
+}
+
+/* Flash Messages */
+.flash-messages {
+    width: 100%;
+    margin: 20px 0;
+}
+.flash-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.flash-message.info {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+.flash-message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+.flash-message.warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+.flash-message.danger {
+    background-color: #f2dede;
+    color: #a94442;
+}

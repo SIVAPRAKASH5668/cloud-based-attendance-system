@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #272727;
+    overflow: hidden;
+    display: flex;
+    justify-content:right;
+    padding: 14px 14px;
+    align-items: center;
+}
+
+.navbar form {
+    display: inline;
+}
+.content {
+    display: ;
+    justify-items: start; /* Align items to the left */
+}
+
+
+.navbar button {
+    background-color: #028391;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    transition-delay: 0.5s;
+    
+}
+.navbar #home {
+    display: flex;
+    justify-content: left;
+    margin-right: 1%;
+}
+
+#logout-form{
+    display: flex;
+    justify-content: left;
+    margin-right: 1%;
+}
+
+.navbar button:hover {
+    transform: scale(1.1);
+}
+
+.navbar button:focus {
+    outline: none;
+}
+.content {
+    padding: 20px;
+    background-color: #EFFFFB;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto; /* Center the form */
+    background-color: #e6faff;
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items:flex-start;
+    justify-content: flex-start;
+    float:left; /* Align items to the top */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-container p {
+    margin: 5px 0;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+select#sem{
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+select#sem:focus{
+    outline: none;
+}
+select#Department{
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+select#Department:focus{
+    outline: none;
+}
+
+select#subject_code{
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+select#subject_code:focus{
+    outline: none;
+}
+
+#qr-video {
+    width: 100%;
+}
+.scan-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.scan-button-container button {
+    padding:2%;
+    border: none;
+    border-radius: 8px;
+    background-color: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.scan-button-container button:hover {
+    transition-delay: 1s;
+    border-bottom: 3px solid #028391;
+    transform: scale(1.1);
+}
+.flash-message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.flash-message.success {
+    background-color: #50D890;
+    color: white;
+}
+.flash-message.danger {
+    background-color: #f44336;
+    color: white;
+}
